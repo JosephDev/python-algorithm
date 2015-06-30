@@ -1,2 +1,4 @@
 # python-algorithm
-Data Structure and Algorithms using Python
+Data Structure and Algorithms Example Codes using Python
+
+- Insertion Sort

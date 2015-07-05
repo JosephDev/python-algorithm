@@ -29,7 +29,7 @@ def merge_sort(array):
                 right_idx += 1
 
 if __name__ == "__main__":
-    array = [int(random.uniform(1, 50)) for i in xrange(10)]
+    array = [int(random.uniform(1, 50)) for i in xrange(11)]
     merge_sort(array)
     print array
     

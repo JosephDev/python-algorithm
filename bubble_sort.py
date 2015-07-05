@@ -1,13 +1,13 @@
 import random
 
-def insert_sort(array):
+def bubble_sort(array):
     for i in xrange(len(array)):
-        if i > 0:
-            while array[i-1] >= array[i] and i > 0:
-                array[i-1], array[i] = array[i], array[i-1]
-                i = i-1
+        for x in xrange(len(array)-i-1):
+            if array[x+1] < array[x]:
+                array[x+1], array[x] = array[x], array[x+1]
+
 
 if __name__ == "__main__":
     array = [int(random.uniform(1, 50)) for i in xrange(10)]
-    insert_sort(array)
+    bubble_sort(array)
     print array
